@@ -1,0 +1,77 @@
+/* Definindo as variáveis no root */
+:root {
+    --primary-red: rgb(245, 95, 95);
+    --secondary-red: rgb(246, 218, 218);
+    --text-color: #333;
+    --font-size-base: 1rem;
+    --font-size-small: 0.9rem;
+    --letter-spacing-base: 0.5px;
+    --letter-spacing-hover: 0.1rem;
+    --border-height: 2px;
+    --gap-small: 0.5rem;
+    --gap-large: 2rem;
+    --logo-max-width: 300px;
+    --logo-max-height: 150px;
+    --red-bar-height: 25px;
+}
+
+/* Linha vermelha no topo */
+.red {
+    background-color: var(--primary-red);
+    width: 100%;
+    height: var(--red-bar-height); /* Utilizando a variável */
+}
+
+/* Estilo header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-small);
+}
+
+/* Container logo */
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo logo */
+.logo {
+    max-width: var(--logo-max-width);
+    max-height: var(--logo-max-height);  
+}
+
+/* Estilo divider */
+.divider {
+    background-color: var(--secondary-red);
+    height: var(--border-height);
+    width: 100%;
+    border: none; 
+}
+
+/* Estilos Nav */
+.nav, .navList {
+    list-style: none;
+    display: flex;
+    gap: var(--gap-large);
+    padding: 0;
+}
+
+.navList li {
+    font-size: var(--font-size-base);
+}
+
+.navList a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: var(--font-size-small);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+.navList a:hover {
+    color: var(--primary-red);
+    letter-spacing: var(--letter-spacing-hover);
+}
