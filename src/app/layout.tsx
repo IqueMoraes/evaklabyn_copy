@@ -1,25 +1,26 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/header";
-import { Roboto } from 'next/font/google'
+import { Open_Sans, Catamaran, Montserrat } from 'next/font/google';
+import { CurrentEvents } from "@/components/section_current_events/current_events";
 
-// Fontes testes
-const roboto = Roboto({
-  weight: ['300', '400'],
+/* Fonts testes imports */
+const openSans = Open_Sans({
+  weight:  ['400', '500', '600', '700'], // Medium, bold
   subsets: ['latin'],
-  variable: '--font-roboto',
-  display: 'swap',
-})
+  display: 'swap'
+});
 
-export const metadata: Metadata = {
-  title: ' Casa Museu Eva Klabin',
-  description: 'Bem vindos ao nosso site',
-  openGraph:{
-    title: 'Casa Museu Eva Klabin',
-    description:'',
-    images: ['images/logo.png'],
-  }
-};
+const catamaran = Catamaran({
+  weight: "100", // Light
+  subsets: ['latin'],
+  display: 'swap'
+});
+const montSerrat = Montserrat({
+  weight:  ['400', '500', '600', '700'], // Medium, bold
+  subsets: ['latin'],
+  display: 'swap'
+});
 
 export default function RootLayout({
   children,
@@ -30,7 +31,8 @@ export default function RootLayout({
     <html lang="en">
       <body>    
         <Header/>
-        {children}       
+        {children} 
+        <CurrentEvents />      
       </body>
     </html>
   );
