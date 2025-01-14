@@ -3,14 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-red: rgb(245, 95, 95);
   --body-font: 'Open Sans', sans-serif;
   --subtitle-font:'Catamaran', sans-serif;
+  --font-teste: 'Montserrat', sans-serif;
   --subtitle-weight: 100;
   --text-boy-color: #000;
   --small-letter-spacing: 0.2px;
   --regular-letter-spacing: 1.5px;
   --big-letter-spacing: 2px;
-
+  --font-size-title-container:clamp(16px, 2vw, 18px);
+  --font-size-cardsubtitle: clamp(22px, 2vw, 24px)
 
 }
 
