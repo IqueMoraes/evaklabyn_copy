@@ -24,6 +24,7 @@
   font-weight: 900;
   margin-bottom: 0.2rem; 
   line-height: 1;
+  margin-left: 10px;
 }
 .titleContainer h2::after {
   content: "em cartaz";

@@ -38,19 +38,19 @@ export function CurrentEvents() {
 
             <section className={styles.divider}></section>            {/* Linha separadora */}
 
-            <article className={styles.cards}>                        {/* Cards de eventos de forma estatica teste para a estilização */}
+            <section className={styles.cards}>                        {/* Cards de eventos de forma estatica teste para a estilização */}
                 {events.map(event => (
-                    <div key={event.id} className={styles.card}>
+                    <article key={event.id} className={styles.card}>
                         <img src={event.image} alt={event.title} className={styles.cardImage} />
-                        <div className={styles.cardContent}>
+                        <section className={styles.cardContent}>
                             <p className={styles.cardType}>{event.type}</p>
                             <h2 className={styles.cardTitle}>{event.title}</h2>
                             <h3 className={styles.cardSubTitle}>{event.subtitle}</h3>
                             <p className={styles.cardDescription}>{event.description}</p>
-                        </div>
-                    </div>
+                        </section>
+                    </article>
                 ))}
-            </article>
+            </section>
         </section>
     );
 }
