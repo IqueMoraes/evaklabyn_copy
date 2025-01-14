@@ -1,15 +1,14 @@
 /* Definindo as variáveis no root */
-:root {
-    --primary-red: rgb(245, 95, 95);
-    --secondary-red: rgb(246, 218, 218);
+:root {   
+    
     --text-color: #333;
-    --font-size-base: 1rem;
+    --font-size-base: 1.2rem;
     --font-size-small: 0.9rem;
     --letter-spacing-base: 0.5px;
     --letter-spacing-hover: 0.1rem;
     --border-height: 2px;
     --gap-small: 0.5rem;
-    --gap-large: 2rem;
+    --gap-large: 3rem;
     --logo-max-width: 300px;
     --logo-max-height: 150px;
     --red-bar-height: 25px;
@@ -19,10 +18,10 @@
 .red {
     background-color: var(--primary-red);
     width: 100%;
-    height: var(--red-bar-height); /* Utilizando a variável */
+    height: var(--red-bar-height);
 }
 
-/* Estilo header */
+
 .header {
     display: flex;
     flex-direction: column;
@@ -37,7 +36,7 @@
     justify-content: center;
 }
 
-/* Estilo logo */
+/* tamanhos logo */
 .logo {
     max-width: var(--logo-max-width);
     max-height: var(--logo-max-height);  
@@ -45,7 +44,7 @@
 
 /* Estilo divider */
 .divider {
-    background-color: var(--secondary-red);
+    background-color: var(--primary-red);
     height: var(--border-height);
     width: 100%;
     border: none; 
@@ -69,6 +68,7 @@
     font-weight: bold;
     font-size: var(--font-size-small);
     letter-spacing: var(--letter-spacing-base);
+    font-family: var(--font-teste);
 }
 
 .navList a:hover {
