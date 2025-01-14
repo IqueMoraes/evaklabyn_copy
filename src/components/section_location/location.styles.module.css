@@ -1,0 +1,126 @@
+/* Definindo variáveis globais para consistência */
+:root {
+    --primary-red: #ca4d2bfd;
+    --padding-container: clamp(20px, 5vw, 40px) clamp(20px, 8vw, 134px);
+    --margin-bottom-title: 1rem;
+    --font-size-title: clamp(24px, 3vw, 32px);
+    --font-size-info: clamp(14px, 1.5vw, 16px);
+    --icon-size: clamp(14px, 1.5vw, 18px);
+    --divider-height: 2px;
+    --divider-margin: 20px 0;
+    --max-container-width: 1200px;
+}
+
+/* Container principal com padding responsivo */
+.container {
+    width: 100%;
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    padding: var(--padding-container);
+    font-family: var(--body-font);
+}
+
+/* Título e linha divisória */
+.title {
+    font-size: var(--font-size-title);
+    font-weight: 900;
+    margin-bottom: var(--margin-bottom-title);
+    margin-left: 10px;
+}
+
+/* Estilização do separador com morrinho */
+.divider {
+    width: 100%;
+    height: var(--divider-height);
+    background: linear-gradient(
+        to right,
+        var(--primary-red) 0%,
+        var(--primary-red) 8.2%,
+        transparent 8%,
+        transparent 11%,
+        var(--primary-red) 10%,
+        var(--primary-red) 100%
+    );
+    position: relative;
+    margin: var(--divider-margin);
+}
+
+/* Pico do divisor */
+.divider::before {
+    content: "";
+    position: absolute;
+    left: 8.5%;
+    top: -9.3px;
+    width: 1.23vw;
+    height: 1.23vw;
+    border-top: var(--divider-height) solid var(--primary-red);
+    border-left: var(--divider-height) solid var(--primary-red);
+    transform: rotate(45deg);
+    background: transparent;
+    min-width: 12px;
+    min-height: 12px;
+}
+
+/* Layout flexível e responsivo para texto e mapa */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: clamp(10px, 2vw, 40px);
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+/* Estilização das informações */
+.info {
+    font-size: var(--font-size-info);
+    color: #333;
+    line-height: 1.5;
+}
+
+.infoItem {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.infoItem img {
+    height: var(--icon-size);
+    width: var(--icon-size);
+}
+
+.infoItem figcaption {
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.info p {
+    width: 100%;
+    max-width: 19rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+/* Estilização do ícone */
+.icon {
+    font-size: var(--icon-size);
+    margin-right: 5px;
+}
+
+/* Estilização do Mapa */
+.map {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+}
+
+.map iframe {
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 380px;
+}

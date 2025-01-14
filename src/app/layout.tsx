@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "@/components/header";
 import { Open_Sans, Catamaran, Montserrat } from 'next/font/google';
 import { CurrentEvents } from "@/components/section_current_events/current_events";
+import { SectionLocation } from "@/components/section_location/location";
 
 /* Fonts testes imports */
 const openSans = Open_Sans({
@@ -30,9 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>    
-        <Header/>
+        <Header/> {/* Header/Cabeçalho do projeto */} 
         {children} 
-        <CurrentEvents />      
+        <CurrentEvents /> {/* seção de 'Programação em cartaz' */}    
+        <SectionLocation />  {/* seção de 'Como chegar' */}    
       </body>
     </html>
   );
