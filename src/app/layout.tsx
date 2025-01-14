@@ -4,6 +4,7 @@ import { Header } from "@/components/header";
 import { Open_Sans, Catamaran, Montserrat } from 'next/font/google';
 import { CurrentEvents } from "@/components/section_current_events/current_events";
 import { SectionLocation } from "@/components/section_location/location";
+import { SectionNewsletter } from "@/components/section_newsletter/newsletter";
 
 /* Fonts testes imports */
 const openSans = Open_Sans({
@@ -31,10 +32,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>    
-        <Header/> {/* Header/Cabeçalho do projeto */} 
-        {children} 
-        <CurrentEvents /> {/* seção de 'Programação em cartaz' */}    
-        <SectionLocation />  {/* seção de 'Como chegar' */}    
+        <Header/>              {/* Header/Cabeçalho do projeto */} 
+        {children}             {/* HomePage */} 
+        <CurrentEvents />      {/* seção de 'Programação em cartaz' */}    
+        <SectionLocation />    {/* seção de 'Como chegar' */}   
+        <SectionNewsletter />  {/* seção de 'Newsletter' */} 
       </body>
     </html>
   );
