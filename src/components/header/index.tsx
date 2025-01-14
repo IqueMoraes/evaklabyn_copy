@@ -14,11 +14,11 @@ export function Header() {
             
             <nav className={styles.nav}>
                 <ul className={styles.navList}>
-                    <li><Link href="/visite" aria-label="Visite a página Visite">Visite</Link></li>
-                    <li><Link href="/sobre" aria-label="Visite a página Sobre">Sobre</Link></li>
-                    <li><Link href="/programacao" aria-label="Visite a página Programação">Programação</Link></li>
-                    <li><Link href="/apoie" aria-label="Visite a página Apoie">Apoie</Link></li>
-                    <li><Link href="/eventos" aria-label="Visite a página Eventos">Eventos</Link></li>
+                    <li><Link href="/visite" aria-label="Visite a página Visite">visite</Link></li>
+                    <li><Link href="/sobre" aria-label="Visite a página Sobre">sobre</Link></li>
+                    <li><Link href="/programacao" aria-label="Visite a página Programação">programação</Link></li>
+                    <li><Link href="/apoie" aria-label="Visite a página Apoie">apoie</Link></li>
+                    <li><Link href="/eventos" aria-label="Visite a página Eventos">eventos</Link></li>
                 </ul>
             </nav>
         </header>
