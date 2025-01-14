@@ -6,7 +6,7 @@ import { CurrentEvents } from "@/components/section_current_events/current_event
 
 /* Fonts testes imports */
 const openSans = Open_Sans({
-  weight:  ['400', '500', '600', '700'], // Light
+  weight:  ['400', '500', '600', '700'], // Medium, bold
   subsets: ['latin'],
   display: 'swap'
 });
@@ -17,7 +17,7 @@ const catamaran = Catamaran({
   display: 'swap'
 });
 const montSerrat = Montserrat({
-  weight:  ['400', '500', '600', '700'], // Light
+  weight:  ['400', '500', '600', '700'], // Medium, bold
   subsets: ['latin'],
   display: 'swap'
 });
