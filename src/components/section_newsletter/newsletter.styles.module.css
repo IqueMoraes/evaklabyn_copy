@@ -1,0 +1,97 @@
+/* falta colocar os roots e melhorias */
+
+
+/* Container principal */
+.container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .titleContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 50px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .titleContainer h2 {
+    font-size: 32px;
+    font-weight: 900;
+    font-family: var(--font-size-title-container);
+    
+  }
+  
+  .titleContainer p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Caixa cinza de fundo com seta */
+  .newsletterBox {
+    background-color: #8c8c8c;
+  
+    width: 100%;
+    padding: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    position: relative;
+  }
+  
+  /* Criando o efeito de seta no topo */
+  .newsletterBox::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 23%;
+    transform: translateX(-50%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #8c8c8c;
+  }
+  
+  /* Estilo do campo de e-mail */
+  .emailInput {
+    display: flex;
+    align-items: center;
+    gap: 14rem;
+    flex: 1;
+   
+  }
+  
+  .emailInput input {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  .emailInput ::placeholder {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  /* Botão do WhatsApp */
+  .whatsappButton {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 8px 50px;
+  
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsappButton:hover {
+    background-color: black;
+  }
+  
