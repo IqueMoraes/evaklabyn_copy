@@ -1,0 +1,74 @@
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--padding-container)
+  }
+  
+  /* container com Título e texto da secao */
+  .titleContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: end;
+    margin-bottom: var(--margin-bottom-title);
+  }
+  
+  .titleContainer h2 {
+    font-weight: 900;
+    margin-bottom: 0.2rem; 
+    line-height: 1;
+  }
+  .titleContainer h2::after {
+    content: "em cartaz";
+    display: block;
+    font-weight: 00;
+  }
+
+
+.titleContainer p {
+    font-size: var(--font-size-title-container);
+    color: #555;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .titleContainer p span {
+    color: var(--primary-red);
+    font-weight: bold;
+  }
+  
+  /* Linha divisória feita a mao, ainda falta responsividade */
+  .divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+      to right,
+      var(--primary-red) 0%,
+      var(--primary-red) 8.2%,
+      transparent 8%,
+      transparent 11%,
+      var(--primary-red) 10%,
+      var(--primary-red) 100%
+    );
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  /* Pico do divisor */
+  .divider::before {
+    content: "";
+    position: absolute;
+    left: 8.5%;
+    top: -9.3px;
+    width: 1.23vw;
+    height: 1.23vw;
+    border-top: 2px solid var(--primary-red);
+    border-left: 2px solid var(--primary-red);
+    transform: rotate(45deg);
+    background: transparent;
+    min-width: 12px;
+    min-height: 12px;
+  }

@@ -13,14 +13,25 @@
   --regular-letter-spacing: 1.5px;
   --big-letter-spacing: 2px;
   --font-size-title-container:clamp(16px, 2vw, 18px);
-  --font-size-cardsubtitle: clamp(22px, 2vw, 24px)
+  --font-size-cardsubtitle: clamp(22px, 2vw, 24px);
+  --text-color: #333;
+  --font-size-base: 1.2rem;
+  --font-size-small: 0.9rem;
+  --letter-spacing-base: 0.5px;
+  --letter-spacing-hover: 0.1rem;
+  --border-height: 2px;
+  --gap-small: 0.5rem;
+  --gap-large: 3rem;
+  --logo-max-width: 300px;
+  --logo-max-height: 150px;
+  --red-bar-height: 25px;
 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* --background: #0a0a0a;
+    --foreground: #ededed; */
   }
 }
 
