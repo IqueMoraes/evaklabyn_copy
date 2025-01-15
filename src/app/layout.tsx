@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/_components/header";
 import { Open_Sans, Catamaran, Montserrat } from 'next/font/google';
-import { CurrentEvents } from "@/_components/section_current_events/current_events";
 
 /* Fonts testes imports */
 const openSans = Open_Sans({
@@ -30,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>    
-        <Header/>
+        <Header/> {/* Header/Cabeçalho do projeto */} 
         {children} 
       </body>
     </html>

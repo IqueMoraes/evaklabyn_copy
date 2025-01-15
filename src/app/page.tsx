@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { HomeSection } from "@/_components/home_sections";
 import { CurrentEvents } from "@/_components/section_current_events/current_events";
+import { SectionLocation } from "@/_components/section_location/location";
 
 export default function Home() {
   return (
@@ -13,16 +13,8 @@ export default function Home() {
           alt=""
         />
       </section>
-      <HomeSection
-        title="Programação em cartaz"
-        subtitle={
-          <p>
-            <span>Pode explorar</span>. A casa é sua.
-          </p>
-        }
-      >
-        <CurrentEvents />
-      </HomeSection>
+      <CurrentEvents />
+      <SectionLocation />
     </>
   );
 }

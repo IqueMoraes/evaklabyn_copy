@@ -1,3 +1,4 @@
+import { HomeSection } from "../home_sections";
 import styles from "./current_events.styles.module.css";
 
 const events = [
@@ -32,6 +33,8 @@ const events = [
 
 export function CurrentEvents() {
   return (
+    <HomeSection title="Programação em cartaz" subtitle={<p><span>Pode explorar</span>. A casa é sua.</p>}>
+
     <article className={styles.cards}>
       {/* Cards de eventos de forma estatica teste para a estilização */}
       {events.map((event) => (
@@ -50,5 +53,7 @@ export function CurrentEvents() {
         </div>
       ))}
     </article>
+          
+    </HomeSection>
   );
 }
